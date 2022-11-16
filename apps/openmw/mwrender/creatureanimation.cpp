@@ -1,11 +1,30 @@
 #include "creatureanimation.hpp"
 
-#include <osg/MatrixTransform>
+#include <exception>
+#include <string_view>
+#include <type_traits>
+#include <unordered_map>
+
+#include <osg/Group>
+#include <osg/Node>
+#include <osg/ref_ptr>
+
+#include <apps/openmw/mwrender/actoranimation.hpp>
+#include <apps/openmw/mwrender/weaponanimation.hpp>
+#include <apps/openmw/mwworld/containerstore.hpp>
+#include <apps/openmw/mwworld/inventorystore.hpp>
+#include <apps/openmw/mwworld/livecellref.hpp>
+#include <apps/openmw/mwworld/ptr.hpp>
 
 #include <components/debug/debuglog.hpp>
+#include <components/esm/defs.hpp>
+#include <components/esm3/loadarmo.hpp>
 #include <components/esm3/loadcrea.hpp>
-#include <components/resource/resourcesystem.hpp>
+#include <components/esm3/loadligh.hpp>
+#include <components/esm3/loadweap.hpp>
+#include <components/sceneutil/controller.hpp>
 #include <components/sceneutil/positionattitudetransform.hpp>
+#include <components/sceneutil/util.hpp>
 #include <components/sceneutil/visitor.hpp>
 #include <components/settings/settings.hpp>
 

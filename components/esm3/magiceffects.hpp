@@ -1,8 +1,10 @@
 #ifndef COMPONENTS_ESM_MAGICEFFECTS_H
 #define COMPONENTS_ESM_MAGICEFFECTS_H
 
+#include <compare>
 #include <map>
 #include <string>
+#include <utility>
 
 namespace ESM
 {

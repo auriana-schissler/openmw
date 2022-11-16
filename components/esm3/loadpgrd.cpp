@@ -1,7 +1,14 @@
 #include "loadpgrd.hpp"
 
+#include <memory>
+#include <stddef.h>
+
 #include "esmreader.hpp"
 #include "esmwriter.hpp"
+
+#include <components/esm/defs.hpp>
+#include <components/esm/esmcommon.hpp>
+#include <components/esm/fourcc.hpp>
 
 namespace ESM
 {

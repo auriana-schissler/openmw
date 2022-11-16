@@ -2,6 +2,7 @@
 #define OPENMW_ESM_CLOT_H
 
 #include <string>
+#include <string_view>
 
 #include "components/esm/defs.hpp"
 #include "loadarmo.hpp"

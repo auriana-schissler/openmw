@@ -2,6 +2,7 @@
 #define OPENMW_ESM_BSGN_H
 
 #include <string>
+#include <string_view>
 
 #include "components/esm/defs.hpp"
 #include "spelllist.hpp"

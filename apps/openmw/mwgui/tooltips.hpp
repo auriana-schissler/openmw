@@ -1,10 +1,22 @@
 #ifndef MWGUI_TOOLTIPS_H
 #define MWGUI_TOOLTIPS_H
 
-#include "../mwworld/ptr.hpp"
-#include "layout.hpp"
+#include <string>
+#include <vector>
 
+#include <MyGUI_Types.h>
+
+#include <apps/openmw/mwworld/cellref.hpp>
+
+#include "../mwworld/ptr.hpp"
+
+#include "layout.hpp"
 #include "widgets.hpp"
+
+namespace MyGUI
+{
+    class Widget;
+}
 
 namespace ESM
 {

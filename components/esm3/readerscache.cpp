@@ -1,6 +1,10 @@
 #include "readerscache.hpp"
 
 #include <stdexcept>
+#include <string>
+#include <utility>
+
+#include <components/esm3/esmreader.hpp>
 
 namespace ESM
 {

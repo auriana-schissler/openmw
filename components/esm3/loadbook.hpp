@@ -1,8 +1,10 @@
 #ifndef OPENMW_ESM_BOOK_H
 #define OPENMW_ESM_BOOK_H
 
-#include "components/esm/defs.hpp"
 #include <string>
+#include <string_view>
+
+#include "components/esm/defs.hpp"
 
 namespace ESM
 {

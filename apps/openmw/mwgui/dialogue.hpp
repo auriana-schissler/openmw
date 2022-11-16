@@ -1,7 +1,16 @@
 #ifndef MWGUI_DIALOGE_H
 #define MWGUI_DIALOGE_H
 
+#include <cstdint>
+#include <list>
+#include <map>
 #include <memory>
+#include <string>
+#include <utility>
+#include <vector>
+
+#include <MyGUI_Types.h>
+#include <MyGUI_Widget.h>
 
 #include "referenceinterface.hpp"
 #include "windowbase.hpp"
@@ -12,6 +21,20 @@
 #include "../mwdialogue/keywordsearch.hpp"
 
 #include <MyGUI_Delegate.h>
+
+namespace MWWorld
+{
+    class Ptr;
+}
+
+namespace MyGUI
+{
+    class Button;
+    class ProgressBar;
+    class ScrollBar;
+    class TextBox;
+    class Window;
+}
 
 namespace Gui
 {

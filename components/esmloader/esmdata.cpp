@@ -1,6 +1,5 @@
 #include "esmdata.hpp"
 #include "lessbyid.hpp"
-#include "record.hpp"
 
 #include <components/esm/defs.hpp>
 #include <components/esm3/loadacti.hpp>
@@ -16,7 +15,6 @@
 #include <stdexcept>
 #include <string>
 #include <string_view>
-#include <type_traits>
 #include <utility>
 #include <vector>
 

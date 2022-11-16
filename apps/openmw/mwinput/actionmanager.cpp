@@ -1,9 +1,24 @@
 #include "actionmanager.hpp"
 
-#include <MyGUI_InputManager.h>
+#include <algorithm>
+#include <memory>
+#include <string>
+#include <vector>
 
 #include <SDL_keyboard.h>
 
+#include <MyGUI_InputManager.h>
+#include <MyGUI_KeyCode.h>
+
+#include <osg/Image>
+#include <osg/Vec2f>
+
+#include <apps/openmw/mwgui/mode.hpp>
+#include <apps/openmw/mwmechanics/drawstate.hpp>
+#include <apps/openmw/mwworld/containerstore.hpp>
+#include <apps/openmw/mwworld/ptr.hpp>
+
+#include <components/misc/notnullptr.hpp>
 #include <components/settings/settings.hpp>
 
 #include "../mwbase/environment.hpp"

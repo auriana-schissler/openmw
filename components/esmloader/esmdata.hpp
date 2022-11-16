@@ -2,19 +2,19 @@
 #define OPENMW_COMPONENTS_ESMLOADER_ESMDATA_H
 
 #include <components/esm/defs.hpp>
+#include <components/esm3/loadacti.hpp>
+#include <components/esm3/loadcell.hpp>
+#include <components/esm3/loadcont.hpp>
+#include <components/esm3/loaddoor.hpp>
+#include <components/esm3/loadgmst.hpp>
+#include <components/esm3/loadland.hpp>
+#include <components/esm3/loadstat.hpp>
 
 #include <string_view>
 #include <vector>
 
 namespace ESM
 {
-    struct Activator;
-    struct Cell;
-    struct Container;
-    struct Door;
-    struct GameSetting;
-    struct Land;
-    struct Static;
     class Variant;
 }
 

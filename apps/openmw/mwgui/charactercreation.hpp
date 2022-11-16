@@ -1,10 +1,14 @@
 #ifndef CHARACTER_CREATION_HPP
 #define CHARACTER_CREATION_HPP
 
-#include <components/esm3/loadclas.hpp>
-
 #include <map>
 #include <memory>
+#include <string>
+
+#include <apps/openmw/mwmechanics/stat.hpp>
+
+#include <components/esm3/loadclas.hpp>
+#include <components/esm3/loadskil.hpp>
 #include <vector>
 
 #include "statswatcher.hpp"
@@ -21,19 +25,16 @@ namespace Resource
 
 namespace MWGui
 {
-    class WindowBase;
-
-    class TextInputDialog;
-    class InfoBoxDialog;
-    class RaceDialog;
-    class DialogueWindow;
-    class ClassChoiceDialog;
-    class GenerateClassResultDialog;
-    class PickClassDialog;
-    class CreateClassDialog;
     class BirthDialog;
+    class ClassChoiceDialog;
+    class CreateClassDialog;
+    class GenerateClassResultDialog;
+    class InfoBoxDialog;
+    class PickClassDialog;
+    class RaceDialog;
     class ReviewDialog;
-    class MessageBoxManager;
+    class TextInputDialog;
+    class WindowBase;
 
     class CharacterCreation : public StatsListener
     {

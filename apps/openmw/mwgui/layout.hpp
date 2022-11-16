@@ -4,7 +4,11 @@
 #include <string>
 #include <string_view>
 
+#include <MyGUI_Exception.h>
 #include <MyGUI_Widget.h>
+#include <MyGUI_WidgetDefines.h>
+
+#include "MyGUI_LogManager.h"
 
 #include <components/debug/debuglog.hpp>
 

@@ -6,7 +6,10 @@
 #include <sstream>
 #include <stack>
 #include <stdexcept>
+#include <utility>
 
+#include <components/compiler/parser.hpp>
+#include <components/compiler/tokenloc.hpp>
 #include <components/misc/strings/lower.hpp>
 
 #include "context.hpp"

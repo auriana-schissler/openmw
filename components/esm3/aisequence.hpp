@@ -5,9 +5,8 @@
 #include <string>
 #include <vector>
 
-#include "components/esm/defs.hpp"
-
-#include "components/esm/util.hpp"
+#include <components/esm/fourcc.hpp>
+#include <components/esm/util.hpp>
 
 namespace ESM
 {

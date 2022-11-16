@@ -3,15 +3,12 @@
 
 #include <string>
 
-#include <osg/Quat>
-#include <osg/Vec3f>
-
-#include "effectlist.hpp"
-
 #include "components/esm/util.hpp"
 
 namespace ESM
 {
+    class ESMReader;
+    class ESMWriter;
 
     // format 0, savegames only
 

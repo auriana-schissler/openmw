@@ -1,24 +1,27 @@
 #ifndef MWGUI_WIDGETS_H
 #define MWGUI_WIDGETS_H
 
-#include "../mwmechanics/stat.hpp"
+#include <algorithm>
+#include <string>
+#include <string_view>
+#include <vector>
 
 #include <MyGUI_Delegate.h>
-#include <MyGUI_TextBox.h>
+#include <MyGUI_RTTI.h>
+#include <MyGUI_Types.h>
 #include <MyGUI_Widget.h>
 
 #include <components/esm3/effectlist.hpp>
 #include <components/esm3/loadskil.hpp>
 
+#include "../mwmechanics/stat.hpp"
+
 namespace MyGUI
 {
     class ImageBox;
     class ControllerItem;
-}
-
-namespace MWBase
-{
-    class WindowManager;
+    class ProgressBar;
+    class TextBox;
 }
 
 /*

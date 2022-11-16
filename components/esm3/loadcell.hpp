@@ -3,17 +3,14 @@
 
 #include <list>
 #include <string>
+#include <string_view>
+#include <utility>
 #include <vector>
 
 #include "cellid.hpp"
 #include "cellref.hpp"
 #include "components/esm/defs.hpp"
 #include "components/esm/esmcommon.hpp"
-
-namespace MWWorld
-{
-    class ESMStore;
-}
 
 namespace ESM
 {

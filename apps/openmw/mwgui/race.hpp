@@ -2,12 +2,22 @@
 #define MWGUI_RACE_H
 
 #include <memory>
+#include <string>
+#include <vector>
+
+#include <MyGUI_Delegate.h>
+#include <MyGUI_ITexture.h>
+
+#include <apps/openmw/mwrender/characterpreview.hpp>
 
 #include "windowbase.hpp"
 
-namespace MWRender
+namespace MyGUI
 {
-    class RaceSelectionPreview;
+    class ImageBox;
+    class ListBox;
+    class ScrollBar;
+    class Widget;
 }
 
 namespace ESM

@@ -1,6 +1,21 @@
 #ifndef GAME_RENDER_ANIMATION_H
 #define GAME_RENDER_ANIMATION_H
 
+#include <algorithm>
+#include <functional>
+#include <map>
+#include <memory>
+#include <string>
+#include <string_view>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
+#include <osg/MatrixTransform>
+#include <osg/Referenced>
+#include <osg/Vec3f>
+#include <osg/ref_ptr>
+
 #include "../mwworld/ptr.hpp"
 
 #include <components/misc/strings/algorithm.hpp>
@@ -9,8 +24,13 @@
 #include <components/sceneutil/textkeymap.hpp>
 #include <components/sceneutil/util.hpp>
 
-#include <unordered_map>
-#include <vector>
+namespace osg
+{
+    class Callback;
+    class Group;
+    class Node;
+    class NodeVisitor;
+}
 
 namespace ESM
 {
@@ -25,7 +45,7 @@ namespace Resource
 
 namespace SceneUtil
 {
-    class KeyframeHolder;
+    class GlowUpdater;
     class KeyframeController;
     class LightSource;
     class LightListCallback;
